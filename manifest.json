@@ -6,7 +6,8 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "image/icon.png"
+    "default_icon": "image/icon.png",
+    "default_popup" : "main.html"
   },
   "options_ui": {
     "page": "options.html",
@@ -22,7 +23,7 @@
     "storage",
     "activeTab",
     "contextMenus",
-    "notifications" 
+    "notifications"
   ],
   /*"optional_permissions": [ "tabs", "/popup.html" ],*/
   "background": {

@@ -17,14 +17,20 @@ function createPopup(selText){
 
 add_to_dictionary = function(word){
   chrome.storage.sync.set({
-    word:'1'
+    word:word
   }, function() {
     // Update status to let user know options were saved.
-    var status = document.getElementById('popup_text');
-    var w = 300;
-    var h = 300;
-    var left = (window.screen.width/2)-(w/2);
-    var top = (window.screen.height/2)-(h/2);
+    // var status = document.getElementById('popup_text');
+    // var w = 300;
+    // var h = 300;
+    // var left = (window.screen.width/2)-(w/2);
+    // var top = (window.screen.height/2)-(h/2);
+    chrome.storage.sync.get({
+
+    }, function(items) {
+      alert(items[0]);
+    });
+
     createPopup(word);
     // window.open('../popup.html','titlebar=0','menubar:0','titlebar=0','status=0');
     // onClickHandler();
