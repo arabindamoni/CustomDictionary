@@ -1,0 +1,9 @@
+#popup_text{
+      border: none;
+      color: white;
+      background-color: green;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+}
